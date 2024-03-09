@@ -20,8 +20,8 @@ or add to NixOS config
 ### Build/Run package
 
 ```
-$ nix run   github:EHfive/flakes#nix-gfx-mesa
-$ nix build github:EHfive/flakes#packages.aarch64-linux.ubootNanopiR2s
+$ nix run   github:bia3/EHfiveFlakes#nix-gfx-mesa
+$ nix build github:bia3/EHfiveFlakes#packages.aarch64-linux.ubootNanopiR2s
 ```
 
 ### Install package, module
@@ -33,7 +33,7 @@ $ nix build github:EHfive/flakes#packages.aarch64-linux.ubootNanopiR2s
 # flake.nix
 {
   inputs.eh5 = {
-    url = "github:EHfive/flakes";
+    url = "github:bia3/EHfiveFlakes";
     inputs.nixpkgs.follows = "nixpkgs";
   };
 
